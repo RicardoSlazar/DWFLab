@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="card">
+
+    <h1>Dashboard</h1>
+
+    <button onclick="logout()">
+
+      Cerrar sesión
+
+    </button>
+
+    <hr>
+
+
+    <h2>Alumnos</h2>
+
+    <input type="text" id="nombreAlumno" placeholder="Nombre">
+    <input type="text" id="apellidoAlumno" placeholder="Apellido">
+
+    <button onclick="crearAlumno()">
+
+      Crear
+
+    </button>
+
+    <button onclick="cargarAlumnos()">
+
+      Mostrar
+
+    </button>
+
+    <div id="alumnos"></div>
+
+    <hr>
+
+
+
+    <h2>Profesores</h2>
+
+    <input type="text" id="nombreProfesor"
+           placeholder="Nombre">
+
+    <button onclick="crearProfesor()">
+
+      Crear
+
+    </button>
+
+    <button onclick="cargarProfesores()">
+
+      Mostrar
+
+    </button>
+
+    <div id="profesores"></div>
+
+    <hr>
+
+
+
+    <h2>Materias</h2>
+
+    <input type="text" id="nombreMateria"
+           placeholder="Nombre">
+
+    <input type="number"
+           id="idProfesorMateria"
+           placeholder="ID Profesor">
+
+    <button onclick="crearMateria()">
+
+      Crear
+
+    </button>
+
+    <button onclick="cargarMaterias()">
+
+      Mostrar
+
+    </button>
+
+    <div id="materias"></div>
+
+    <hr>
+
+
+
+    <h2>Notas</h2>
+    <input type="number"
+           id="idAlumnoNota"
+           placeholder="ID Alumno">
+
+    <input type="number"
+           id="idMateriaNota"
+           placeholder="ID Materia">
+
+    <input
+            type="number"
+            id="notaAlumno"
+            placeholder="Nota (0-10)"
+            min="0"
+            max="10"
+            step="0.1">
+
+    <button onclick="crearNota()">
+
+      Crear
+
+    </button>
+
+    <button onclick="cargarNotas()">
+
+      Mostrar
+
+    </button>
+
+    <div id="notas"></div>
+
+  </div>
+
+</div>
+
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login JWT</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<div class="container">
+    <div class="card">
+        <h1>Iniciar Sesión</h1>
+        <input
+                type="text"
+                id="username"
+                placeholder="Usuario"
+        >
+        <input
+                type="password"
+                id="password"
+                placeholder="Contraseña"
+        >
+        <button onclick="login()">
+            Entrar
+        </button>
+        <br><br>
+        <a href="register.html">
+            Crear cuenta nueva
+        </a>
+        <p id="mensaje"></p>
+    </div>
+</div>
+
+<script src="js/login.js"></script>
+
+</body>
+</html>
